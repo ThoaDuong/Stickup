@@ -36,9 +36,9 @@
             </div>
             <div id="nav-show" class="nav-list-sm">
                 <ul>
-                    <li><a onclick="itemFirst()" class="nav-item active" href="#about">About us</a></li>
-                    <li><a onclick="itemSecond()" class="nav-item" href="#services">Services</a></li>
-                    <li><a onclick="itemThird()" class="nav-item" href="#form">Sign up</a></li>
+                    <li><a onclick="itemFour()" class="nav-item active" href="#about">About us</a></li>
+                    <li><a onclick="itemFive()" class="nav-item" href="#services">Services</a></li>
+                    <li><a onclick="itemSix()" class="nav-item" href="#form">Sign up</a></li>
                 </ul>
             </div>
         </div>
@@ -240,27 +240,34 @@
             element[0].classList.add('active');
             element[1].classList.remove('active');
             element[2].classList.remove('active');
-
-            element[3].classList.add('active');
-            element[4].classList.remove('active');
-            element[5].classList.remove('active');
         }
         function itemSecond(){
             var element = document.getElementsByClassName("nav-item");
             element[1].classList.add('active');
             element[0].classList.remove('active');
             element[2].classList.remove('active');
-
-            element[4].classList.add('active');
-            element[3].classList.remove('active');
-            element[5].classList.remove('active');
         }
         function itemThird(){
             var element = document.getElementsByClassName("nav-item");
             element[2].classList.add('active');
             element[0].classList.remove('active');
             element[1].classList.remove('active');
-
+        }
+        // Nav list
+        function itemFour(){
+            var element = document.getElementsByClassName("nav-item");
+            element[3].classList.add('active');
+            element[4].classList.remove('active');
+            element[5].classList.remove('active');
+        }
+        function itemFive(){
+            var element = document.getElementsByClassName("nav-item");
+            element[4].classList.add('active');
+            element[3].classList.remove('active');
+            element[5].classList.remove('active');
+        }
+        function itemSix(){
+            var element = document.getElementsByClassName("nav-item");
             element[5].classList.add('active');
             element[3].classList.remove('active');
             element[4].classList.remove('active');
