@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll">
+    <section class="navigation">
+        <div class="header">
+            <div class="header-language">
+                <div class="language-content">LOREM IPSUM DOLOR SIT AMET. CONSECTETUR ADIPISCING ELIT</div>
+                <div class="language-flag">
+                    <a onclick="iconFirst()"><img class="lang-img selected" src="images/Layer-1.png" alt="Language 1"></a>
+                    <a onclick="iconSecond()"><img class="lang-img" src="images/Layer-2.png" alt="Language 2"></a>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="nav-logo">
+                    <img src="images/Untitled-9.jpg" alt="Logo">
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a onclick="itemFirst()" class="nav-item active" href="#about">About us</a></li>
+                        <li><a onclick="itemSecond()" class="nav-item" href="#services">Services</a></li>
+                        <li><a onclick="itemThird()" class="nav-item" href="#form">Sign up</a></li>
+                    </ul>
+                </div>
+                <div class="nav-menu-sm">
+                    <a onclick="navShow()"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+            <div id="nav-show" class="nav-list-sm">
+                <ul>
+                    <li><a onclick="itemFirst()" class="nav-item active" href="#about">About us</a></li>
+                    <li><a onclick="itemSecond()" class="nav-item" href="#services">Services</a></li>
+                    <li><a onclick="itemThird()" class="nav-item" href="#form">Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="clearfix"></div>
+        <div class="about-block about-block-first">
+            <div class="about-block-media">
+                <img src="images/Layer-9.png" alt="About us">
+            </div>
+            <div class="about-block-content">
+                <div class="content-title">What is Lorem Ipsum?</div>
+                <div class="content-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore delectus ipsum aliquam, praesentium error necessitatibus enim itaque quis! Ad doloribus maxime optio at, aliquam magni itaque adipisci voluptates quae cumque?</div>
+                <div class="content-button">
+                    <button class="btn btn-read-first">Read more</button>
+                </div>
+            </div>
+        </div>
+        <div class="block-center">
+            <div class="title-1">Who Are We</div>
+            <div class="title-2">ABOUT US</div>
+        </div>
+        <div class="about-block about-block-second">
+            <div class="about-block-content">
+                <div class="content-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempore voluptates officiis deleniti ad, commodi molestiae asperiores cupiditate praesentium ipsum necessitatibus, repellat eum voluptatum exercitationem? Dolorum possimus doloribus provident voluptates.</p>
+                    <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempore voluptates officiis deleniti ad, commodi molestiae asperiores cupiditate praesentium ipsum necessitatibus.</p>
+                    <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempore voluptates officiis deleniti ad, commodi molestiae asperiores cupiditate praesentium ipsum necessitatibus.</p>
+                </div>
+                <div class="content-button">
+                    <button class="btn btn-read-second">Read more</button>
+                </div>  
+            </div>
+            <div class="about-block-media">
+                <video autoplay="autoplay" loop="loop">
+                    <source src="images/video.mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="block-center services-center">
+            <div class="title-1">What we offer</div>
+            <div class="title-2">SERVICES</div>
+        </div>
+        <div class="services-block-lg">
+            <div class="services-block">
+                <div class="services-block-item">
+                    <div onmouseover="showOne()" onmouseout="noneOne()" class="block-image">
+                        <img src="images/113.jpg" alt="Block services">
+                        <div class="show">
+                            <div class="center"><a onclick="showDetail()">Readmore</a></div>
+                        </div>
+                    </div>
+                    <div class="block-content">Look for job</div>    
+                </div>
+                <div class="services-block-item">
+                    <div onmouseover="showTwo()" onmouseout="noneTwo()" class="block-image">
+                        <img src="images/114.jpg" alt="Block services">
+                        <div class="show">
+                            <div class="center"><a onclick="showDetail()">Readmore</a></div>
+                        </div>
+                    </div>
+                    <div class="block-content">Look for job</div>
+                </div>
+                <div class="services-block-item">
+                    <div onmouseover="showThree()" onmouseout="noneThree()" class="block-image">
+                        <img src="images/113.jpg" alt="Block services">
+                        <div class="show">
+                            <div class="center"><a onclick="showDetail()">Readmore</a></div>
+                        </div>
+                    </div>
+                    <div class="block-content">Look for job</div>
+                </div>
+                <div class="services-block-item">
+                    <div onmouseover="showFour()" onmouseout="noneFour()" class="block-image">
+                        <img src="images/114.jpg" alt="Block services">
+                        <div class="show">
+                            <div class="center"><a onclick="showDetail()">Readmore</a></div>
+                        </div>
+                    </div>
+                    <div class="block-content">Look for job</div>
+                </div>
+            </div>
+        </div>
+        <div class="services-block-sm">
+            <div class="services-block">
+                <div class="services-block-wapper">
+                    <div class="services-block-item">
+                        <div onmouseover="showOne()" onmouseout="noneOne()" class="block-image">
+                            <img src="images/113.jpg" alt="Block services">
+                            <div class="show">
+                                <div class="center"><a onclick="showDetail()">Readmore</a></div>
+                            </div>
+                        </div>
+                        <div class="block-content">Look for job</div>    
+                    </div>
+                    <div class="services-block-item">
+                        <div onmouseover="showTwo()" onmouseout="noneTwo()" class="block-image">
+                            <img src="images/113.jpg" alt="Block services">
+                            <div class="show">
+                                <div class="center"><a onclick="showDetail()">Readmore</a></div>
+                            </div>
+                        </div>
+                        <div class="block-content">Look for job</div>
+                    </div>
+                </div>
+                <div class="services-block-wapper">
+                    <div class="services-block-item">
+                        <div onmouseover="showThree()" onmouseout="noneThree()" class="block-image">
+                            <img src="images/114.jpg" alt="Block services">
+                            <div class="show">
+                                <div class="center"><a onclick="showDetail()">Readmore</a></div>
+                            </div>
+                        </div>
+                        <div class="block-content">Look for job</div>
+                    </div>
+                    <div class="services-block-item">
+                        <div onmouseover="showFour()" onmouseout="noneFour()" class="block-image">
+                            <img src="images/114.jpg" alt="Block services">
+                            <div class="show">
+                                <div class="center"><a onclick="showDetail()">Readmore</a></div>
+                            </div>
+                        </div>
+                        <div class="block-content">Look for job</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services-detail">
+                <div class="detail-title">Look for job</div>
+                <div class="detail-content">
+                    <div class="detail-content-block">
+                        <div class="detail-block-img"><img src="images/ad.png" alt="image detail"></div>
+                        <p>PROFILE BUILDING WITH TEXT AND IMAGES</p>
+                    </div>
+                    <div class="detail-content-block">
+                            <div class="detail-block-img"><img src="images/magnifier.png" alt="image detail"></div>
+                        <p>SEARCH FOR JOBS</p>
+                    </div>
+                    <div class="detail-content-block">
+                            <div class="detail-block-img"><img src="images/web1.png" alt="image detail"></div>
+                        <p>EASE FOR SIGNIN</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="form" class="form">
+        <div class="form-wapper">
+            <div class="block-center">
+                <div class="title-1">How To Use</div>
+                <div class="title-2">FORM</div>
+            </div>
+            <div class="form-signup">
+                <form>
+                    <label class="lable-title">Stick me upz</label>
+                    <div class="form-content">
+                        <div class="form-left">
+                            <label for="email" class="label">Email *</label>
+                            <input type="text" id="email">
+                        </div>
+                        <div class="form-right">
+                            <label for="phone" class="label">Phone *</label>
+                            <input type="text" id="phone">
+                        </div>
+                    </div>
+                    <div class="form-content">
+                        <div class="form-left">
+                            <label for="first-name" class="label">First name *</label>
+                            <input type="text" id="first-name">
+                        </div>
+                        <div class="form-right">
+                            <label for="last-name" class="label">Last name *</label>
+                            <input type="text" id="last-name">
+                        </div>
+                    </div>
+                    <div class="form-button"><button class="btn btnSignUp">Sign Up</button></div>
+                </form>
+            </div>
+        </div>
+    </section> 
+    <section class="footer">
+        <div class="footer-wapper">
+            <div class="footer-title">STICK UPZ</div>
+            <div class="footer-content">Just one click, stick your name on the map</div>
+            <div class="footer-nav">
+                <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">Coppyright@2019 Stickupz. All rights reserved</div>
+        </div>
+    </section>  
+    <script>
+        // Nav list
+        function itemFirst(){
+            var element = document.getElementsByClassName("nav-item");
+            element[0].classList.add('active');
+            element[1].classList.remove('active');
+            element[2].classList.remove('active');
+        }
+        function itemSecond(){
+            var element = document.getElementsByClassName("nav-item");
+            element[1].classList.add('active');
+            element[0].classList.remove('active');
+            element[2].classList.remove('active');
+        }
+        function itemThird(){
+            var element = document.getElementsByClassName("nav-item");
+            element[2].classList.add('active');
+            element[0].classList.remove('active');
+            element[1].classList.remove('active');
+        }
+        // Icon language
+        function iconFirst(){
+            var element = document.getElementsByClassName("lang-img");
+            element[0].classList.add('selected');
+            element[1].classList.remove('selected');
+        }
+        function iconSecond(){
+            var element = document.getElementsByClassName("lang-img");
+            element[1].classList.add('selected');
+            element[0].classList.remove('selected');
+        }
+        // Show detail services
+        function showDetail(){
+            var element = document.getElementsByClassName("services-detail");
+            element[0].classList.toggle('detail-show');
+        }
+        // Show hover detail
+        function navShow() {
+            var element = document.getElementById("nav-show");
+            element.classList.toggle("nav-list-sm-show");
+        }
+        function showOne(){
+            var a = document.getElementsByClassName("show");
+            a[0].style.display = 'block';
+        }
+        function noneOne(){
+            var a = document.getElementsByClassName("show");
+            a[0].style.display = 'none';
+        }
+        function showTwo(){
+            var a = document.getElementsByClassName("show");
+            a[1].style.display = 'block';
+        }
+        function noneTwo(){
+            var a = document.getElementsByClassName("show");
+            a[1].style.display = 'none';
+        }
+        function showThree(){
+            var a = document.getElementsByClassName("show");
+            a[2].style.display = 'block';
+        }
+        function noneThree(){
+            var a = document.getElementsByClassName("show");
+            a[2].style.display = 'none';
+        }
+        function showFour(){
+            var a = document.getElementsByClassName("show");
+            a[3].style.display = 'block';
+        }
+        function noneFour(){
+            var a = document.getElementsByClassName("show");
+            a[3].style.display = 'none';
+        }
+    </script>
+</body>
+</html>
