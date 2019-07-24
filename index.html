@@ -253,6 +253,25 @@
             element[0].classList.remove('active');
             element[1].classList.remove('active');
         }
+        // Nav list
+        function itemFirst(){
+            var element = document.getElementsByClassName("nav-item");
+            element[3].classList.add('active');
+            element[4].classList.remove('active');
+            element[5].classList.remove('active');
+        }
+        function itemSecond(){
+            var element = document.getElementsByClassName("nav-item");
+            element[4].classList.add('active');
+            element[3].classList.remove('active');
+            element[5].classList.remove('active');
+        }
+        function itemThird(){
+            var element = document.getElementsByClassName("nav-item");
+            element[5].classList.add('active');
+            element[3].classList.remove('active');
+            element[4].classList.remove('active');
+        }
         // Icon language
         function iconFirst(){
             var element = document.getElementsByClassName("lang-img");

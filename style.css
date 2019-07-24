@@ -240,13 +240,13 @@ html, body{
 .detail-content{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
 }
 .detail-content-block{
-    margin: 2rem 10rem;
-    width: 20%;
-    padding: 1.8rem 0.5rem;
+    margin: 1rem 5rem;
+    width: 33.33%;
+    padding: 2rem 0.5rem;
     transition: all 0.5s;
 }
 .detail-content-block:hover{
@@ -411,6 +411,9 @@ html, body{
         margin: 0 auto;
         width: 90%;
     }
+    .detail-content{
+        flex-wrap: wrap;
+    }
     /* form */
     .form-signup .form-content{
         width: 100%;
@@ -425,7 +428,7 @@ html, body{
         padding: 2rem 2rem;
     }
 }
-@media only screen and (max-width: 578px){
+@media only screen and (max-width: 600px){
     .header-language{
         flex-wrap: wrap;
         justify-content: center;
@@ -448,7 +451,6 @@ html, body{
     .nav-list-sm-show{
         display: block;
         visibility: visible;
-        
     }
     .nav-list-sm{
         text-align: center;
@@ -471,6 +473,7 @@ html, body{
         color: #a8cde8;
     }
     .nav-list-sm ul li .active{
+        background-color: #fff;
         color: #327cc0;
         padding-bottom: 5px;
         border-bottom: 3px solid #327cc0;
